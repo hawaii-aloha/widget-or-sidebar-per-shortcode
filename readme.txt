@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: widgets, page, post, sidebar, shortcode
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,13 +58,10 @@ For other Widgets look at the source code from the widget or ask the widget auth
 
 == Changelog ==
 
-= 0.3 =
-- fix: wrong directory name in installation part of readme
-
-
 = 0.2 =
 - typo in readme
 - filenames changed to repository name ("fs-" removed)
+- fix: wrong directory name in installation part of readme
 
 = 0.1 =
 First version.
