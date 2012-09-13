@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors:f.staude)
-Donate link: http://example.com/
+Contributors:f.staude
+Donate link: http://www.staude.net/donate
 Tags: widgets, page, post, sidebar, shortcode
 Requires at least: 3.0
 Tested up to: 3.4.2
@@ -57,6 +57,10 @@ For other Widgets look at the source code from the widget or ask the widget auth
 
 
 == Changelog ==
+
+= 0.3 =
+- fix: contributorname and donate link in readme
+
 
 = 0.2 =
 - typo in readme
