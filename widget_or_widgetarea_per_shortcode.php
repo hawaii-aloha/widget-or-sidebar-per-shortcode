@@ -4,7 +4,7 @@ Plugin Name: Widget or Sidebar Shortcode
 Plugin URI: http://staude.net/wordpress/plugins/WidgetSidebarShortcode
 Description: Use widgets and sidebars via shortcode in pages or posts
 Author: Frank Staude
-Version: 0.1
+Version: 0.2
 Author URI: http://www.staude.net/
 Compatibility: WordPress 3.4.2
 */
@@ -26,7 +26,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-include_once dirname( __FILE__ ) .'/class-fs-widget-or-sidebar-per-shortcode.php';
+include_once dirname( __FILE__ ) .'/class-widget-or-sidebar-per-shortcode.php';
 
-$fs_widget_or_sidebar_per_shortcode = new fs_widget_or_sidebar_per_shortcode();
+$widget_or_sidebar_per_shortcode = new widget_or_sidebar_per_shortcode();
 

@@ -12,7 +12,7 @@ Use widgets or sidebars per shortcode in the content area from pages/posts
 
 == Description ==
 
-This plugin implements 2 mew shortcodes.
+This plugin implements 2 new shortcodes.
 
 [widget name="" instance=""] to use a widget per shortcode in the content area from a page/post.
 
@@ -30,7 +30,7 @@ name is the name of the sidebar e.g. Showcase Sidebar so the complete shortcode 
 [sidebar name="Showcase Sidebar"]
 
 
-For own css styling, the plugin wraps the widgets in <div id="Widget_Name" class="widget_shortcode"> and the sidebar in <div id="Sidebar_Name" class="sidebar_shortcode">
+For own css styling, the plugin wraps the widgets in < div id="Widget_Name" class="widget_shortcode"> and the sidebar in < div id="Sidebar_Name" class="sidebar_shortcode">
 
 == Installation ==
 
@@ -57,6 +57,11 @@ For other Widgets look at the source code from the widget or ask the widget auth
 
 
 == Changelog ==
+
+
+= 0.2 =
+- typo in readme
+- filenames changed to repository name ("fs-" removed)
 
 = 0.1 =
 First version.

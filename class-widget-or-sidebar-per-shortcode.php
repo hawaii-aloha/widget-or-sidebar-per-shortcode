@@ -17,10 +17,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-class fs_widget_or_sidebar_per_shortcode {
+class widget_or_sidebar_per_shortcode {
 	function __construct() {
-		add_shortcode( 'widget', array( 'fs_widget_or_sidebar_per_shortcode','WidgetShortcode' ) );
-		add_shortcode( 'sidebar', array( 'fs_widget_or_sidebar_per_shortcode','SidebarShortcode' ) );
+		add_shortcode( 'widget', array( 'widget_or_sidebar_per_shortcode','WidgetShortcode' ) );
+		add_shortcode( 'sidebar', array( 'widget_or_sidebar_per_shortcode','SidebarShortcode' ) );
 	}
 
 	/**
@@ -60,7 +60,7 @@ class fs_widget_or_sidebar_per_shortcode {
 	 * Ausgabe einer Sidebar
 	 *
 	 * Gibt per Shortcode alle Widgets aus, die einer Sidebar zugeordnet sind. Dazu wird
-	 * der Name der Sidebar im Aufruf übergeben. Beispielsweise
+	 * der Name der Sidebar im Aufruf uebergeben. Beispielsweise
 	 * <code>
 	 * [sidebar name="Allgemeine Sidebar"]
 	 * </code>
