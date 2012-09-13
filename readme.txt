@@ -34,7 +34,7 @@ For own css styling, the plugin wraps the widgets in < div id="Widget_Name" clas
 
 == Installation ==
 
-1. Install the plugin from within the Dashboard or upload the directory `fs-widget-or-sidebar-per-shortcode` and all its contents to the `/wp-content/plugins/` directory
+1. Install the plugin from within the Dashboard or upload the directory `widget-or-sidebar-per-shortcode` and all its contents to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Use the shortcodes.
 
@@ -57,6 +57,9 @@ For other Widgets look at the source code from the widget or ask the widget auth
 
 
 == Changelog ==
+
+= 0.3 =
+- fix: wrong directory name in installation part of readme
 
 
 = 0.2 =
