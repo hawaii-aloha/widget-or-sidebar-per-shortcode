@@ -32,6 +32,11 @@ name is the name of the sidebar e.g. Showcase Sidebar so the complete shortcode 
 
 For own css styling, the plugin wraps the widgets in < div id="Widget_Name" class="widget_shortcode"> and the sidebar in < div id="Sidebar_Name" class="sidebar_shortcode">
 
+If your want report a bug or a feature, please use http://bugs.staude.net
+
+Entrys in the changelog with numbers means the ticket id on
+http://bugs.staude.net
+
 == Installation ==
 
 1. Install the plugin from within the Dashboard or upload the directory `widget-or-sidebar-per-shortcode` and all its contents to the `/wp-content/plugins/` directory
@@ -48,7 +53,17 @@ instance are the attributs of the widget. e.g.  title=Hello,World!  so the compl
 For the instance list of the Wordpress builtin Widgets look at http://codex.wordpress.org/Function_Reference/the_widget
 For other Widgets look at the source code from the widget or ask the widget author.
 
+= I found a bug  =
 
+Please report it at http://bugs.staude.net
+
+Select the project "WP Plugin: Widget or Sidebar Shortcode" and report it.
+
+= I have a feature request =
+
+Please report it at http://bugs.staude.net
+
+Select the project "WP Plugin: Widget or Sidebar Shortcode" and report it.
 
 == Screenshots ==
 1. Using the shortcode in the content area of an post.
@@ -59,8 +74,9 @@ For other Widgets look at the source code from the widget or ask the widget auth
 == Changelog ==
 
 = 0.3 =
+- #0000003: link to bugs.staude.net in readme
+- #0000002: filenames & classnames conform to plugin name
 - fix: contributorname and donate link in readme
-
 
 = 0.2 =
 - typo in readme
