@@ -6,7 +6,7 @@ Description: Use widgets and sidebars via shortcode in pages or posts
 Author: Frank Staude
 Version: 0.2
 Author URI: http://www.staude.net/
-Compatibility: WordPress 3.4.2
+Compatibility: WordPress 3.5
 */
 
 /*  Copyright 2012  Frank Staude  (email : frank@staude.net)
