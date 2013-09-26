@@ -3,8 +3,8 @@ Contributors:f.staude
 Donate link: http://www.staude.net/donate
 Tags: widgets, page, post, sidebar, shortcode
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 0.2
+Tested up to: 3.6.1
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,9 +14,17 @@ Use widgets or sidebars per shortcode in the content area from pages/posts
 
 This plugin implements 2 new shortcodes.
 
-[widget name="" instance=""] to use a widget per shortcode in the content area from a page/post.
+[widget name="" classname='' instance=""] to use a widget per shortcode in the content area from a page/post.
 
 name is the name of the widget, e.g.  Calendar.
+classname is the name of the PHP Class that implement the widget.
+You can use name or classname.
+
+So are  [widget name="Kalender" instance="title=Hello,World!"]
+and [widget classname="WP_Widget_Calendar" instance="title=Hello,World!"]
+produce the same output.
+
+
 instance are the attributs of the widget. e.g.  title=Hello,World!  so the complete shortcode is
 [widget name="Calendar" instance="title=Hello,World!"]
 
@@ -48,7 +56,7 @@ http://bugs.staude.net
 = What is the instance parameter? =
 
 instance are the attributs of the widget. e.g.  title=Hello,World!  so the complete shortcode is
-[widget name="Calendar" instance="title=Hello,World!"]
+[widget name="Calendar" instance="title=Hello,World!"] 
 
 For the instance list of the Wordpress builtin Widgets look at http://codex.wordpress.org/Function_Reference/the_widget
 For other Widgets look at the source code from the widget or ask the widget author.
@@ -72,6 +80,10 @@ Select the project "WP Plugin: Widget or Sidebar Shortcode" and report it.
 
 
 == Changelog ==
+
+= 0.4 =
+- 0000041: Would it be possible to call a widget by its PHP class name instead of its name?
+  Added parameter classname. Use: 
 
 = 0.3 =
 - #0000003: link to bugs.staude.net in readme
