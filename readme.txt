@@ -3,8 +3,8 @@ Contributors:f.staude
 Donate link: http://www.staude.net/donate
 Tags: widgets, page, post, sidebar, shortcode
 Requires at least: 3.0
-Tested up to: 3.6.1
-Stable tag: 0.4
+Tested up to: 3.7.1
+Stable tag: 0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,9 +81,12 @@ Select the project "WP Plugin: Widget or Sidebar Shortcode" and report it.
 
 == Changelog ==
 
+= 0.5 =
+- Disable some php notices if WP Debug active
+
 = 0.4 =
-- 0000041: Would it be possible to call a widget by its PHP class name instead of its name?
-  Added parameter classname. Use: 
+- #0000041: Would it be possible to call a widget by its PHP class name instead of its name?
+  Added parameter classname. Use: [widget classname='']
 
 = 0.3 =
 - #0000003: link to bugs.staude.net in readme
@@ -96,5 +99,5 @@ Select the project "WP Plugin: Widget or Sidebar Shortcode" and report it.
 - fix: wrong directory name in installation part of readme
 
 = 0.1 =
-First version.
+- First version.
 

@@ -19,8 +19,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 class widget_or_sidebar_per_shortcode {
     function __construct() {
-        add_shortcode( 'widget', array( 'widget_or_sidebar_per_shortcode','WidgetShortcode' ) );
-        add_shortcode( 'sidebar', array( 'widget_or_sidebar_per_shortcode','SidebarShortcode' ) );
+        add_shortcode( 'widget', array( 'widget_or_sidebar_per_shortcode', 'WidgetShortcode' ) );
+        add_shortcode( 'sidebar', array( 'widget_or_sidebar_per_shortcode', 'SidebarShortcode' ) );
     }
 
     /**
@@ -37,7 +37,7 @@ class widget_or_sidebar_per_shortcode {
      * @param array $atts
      * @return string
      */
-    function WidgetShortcode( array $atts ) {
+    static public function WidgetShortcode( array $atts ) {
         global  $wp_registered_widgets;
         $back = '';
         $widget_class = '';
@@ -47,14 +47,14 @@ class widget_or_sidebar_per_shortcode {
             // Nun den Klassennamen des Widgets ermitteln, die Funktion the_widget erwartet den
             // Klassennamen des Widgets als Parameter.
             foreach ( $wp_registered_widgets as $widget ) {
-                if ( $widget['name'] == $name ) {
-                    $widget_class =  get_class( $widget['callback'][0] );
+                if ( $widget[ 'name' ] == $name ) {
+                    $widget_class =  get_class( $widget[ 'callback' ][ 0 ] );
                     continue;
                 }
             }
         } elseif ( $classname != '' ) {
             foreach ( $wp_registered_widgets as $widget ) {
-                if ( get_class( $widget['callback'][0] ) == $classname ) {
+                if ( get_class( $widget[ 'callback' ][ 0 ] ) == $classname ) {
                     $widget_class =  $classname;
                     continue;
                 }
@@ -83,11 +83,11 @@ class widget_or_sidebar_per_shortcode {
      * @param array $atts
      * @return string
      */
-    function SidebarShortcode( array $atts ) {
+    static public function SidebarShortcode( array $atts ) {
         extract( shortcode_atts( array( 'name' => '1' ), $atts ) );
         $back =  "<div id='" . str_replace( " ", "_", $name ) . "' class='sidebar_shortcode'>";
         ob_start();
-        if ( ! function_exists('dynamic_sidebar') || ! dynamic_sidebar($name) ) {}
+        if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( $name ) ) {}
         $back .= ob_get_contents();
         ob_end_clean();
         $back .= "</div>";
