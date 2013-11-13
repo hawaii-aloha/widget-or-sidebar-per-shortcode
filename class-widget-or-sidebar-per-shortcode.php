@@ -43,6 +43,7 @@ class widget_or_sidebar_per_shortcode {
         $widget_class = '';
                 
         extract( shortcode_atts( array( 'name' => '', 'instance' => '', 'classname' => '' ), $atts ) );
+        $instance = html_entity_decode( $instance );
         if ( $name != '' ) {
             // Nun den Klassennamen des Widgets ermitteln, die Funktion the_widget erwartet den
             // Klassennamen des Widgets als Parameter.
@@ -63,6 +64,7 @@ class widget_or_sidebar_per_shortcode {
         if ( $widget_class != '' ) {
             $back =  "<div id='" . str_replace( " ", "_", $name ) . "' class='widget_shortcode'>";
             ob_start();
+            var_dump($instance);
             the_widget( $widget_class, $instance );
             $back .= ob_get_contents();
             ob_end_clean();
